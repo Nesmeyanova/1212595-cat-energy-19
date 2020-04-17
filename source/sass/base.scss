@@ -2,7 +2,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -13,7 +15,7 @@ body {
 
   font-size: 14px;
   line-height: 18px;
-  font-family: "Oswald", arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   color: #111111;
   font-style: normal;
 
@@ -25,9 +27,13 @@ img {
   height: auto;
 }
 
-a { text-decoration: none }
+a {
+  text-decoration: none;
+}
 
-.visually-hidden:not(:focus):not(:active), input[type=checkbox].visually-hidden, input[type=radio].visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;

@@ -1,13 +1,14 @@
 .catalog-promo {
   min-width: 280px;
   min-height: 289px;
-  background-image: url(../../img/gift-photo-mobile@1x.jpg);
+  background-image: url("../../img/gift-photo-mobile@1x.jpg");
   background-size: 280px 289px;
   background-color: #68b738;
   background-repeat: no-repeat;
 }
+
 .catalog-promo__text {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;

@@ -18,7 +18,7 @@
 
 .optional-item__title--slim::before {
   content: "";
-  background-image: url(../../img/icon-cat-slim.svg);
+  background-image: url("../../img/icon-cat-slim.svg");
   width: 35px;
   height: 49px;
   background-color: #68b738;
@@ -42,7 +42,7 @@
 
 .optional-item__title--pro::before {
   content: "";
-  background-image: url(../../img/icon-cat-pro.svg);
+  background-image: url("../../img/icon-cat-pro.svg");
   width: 67px;
   height: 28px;
   background-color: #68b738;
@@ -66,7 +66,7 @@
 
 .optional-item__text {
   color: #444444;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
 }
@@ -93,7 +93,7 @@
 
 .optional-item__footer::after {
   content: "";
-  background-image: url(../../img/icon-right-arrow-long.svg);
+  background-image: url("../../img/icon-right-arrow-long.svg");
   width: 25px;
   height: 12px;
   display: inline-block;
