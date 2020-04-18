@@ -18,9 +18,7 @@
     display: inline-block;
     vertical-align: middle;
   }
-}
 
-.advantages__item {
   &--healthy::before {
     background-image: url("../../img/advantage-leaf@1x.png");
   }
