@@ -1,0 +1,13 @@
+.titles {
+  color: #111111;
+  font-size: 36px;
+  line-height: 60px;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .titles {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}

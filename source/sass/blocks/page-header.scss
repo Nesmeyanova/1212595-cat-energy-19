@@ -1,0 +1,16 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  background-color: $bg-white;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__toggle {
+  width: 25px;
+  height: 19px;
+  background-image: url("../../img/icon-mobile-menu.svg");
+}
