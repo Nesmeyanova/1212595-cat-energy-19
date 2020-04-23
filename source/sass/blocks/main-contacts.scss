@@ -1,5 +1,10 @@
 .main-contacts {
+  display: flex;
+  justify-content: space-between;
   background-color: #ffffff;
+  padding-top: 31px;
+  padding-right: 25px;
+  padding-left: 19px;
 }
 
 .main-contacts__title {
@@ -8,6 +13,8 @@
   text-align: left;
   font-size: 16px;
   line-height: 20px;
+  font-weight: normal;
+  margin: 0;
 }
 
 .main-contacts__address {
@@ -16,4 +23,5 @@
   text-align: left;
   font-size: 14px;
   line-height: 20px;
+  font-style: normal;
 }

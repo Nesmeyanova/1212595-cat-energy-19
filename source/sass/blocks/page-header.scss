@@ -7,10 +7,17 @@
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
+  width: 280px;
+  margin: 0 auto;
+  min-height: 65px;
+}
+
+.page-header__logo {
+  height: 39px;
 }
 
 .page-header__toggle {
   width: 25px;
   height: 19px;
-  background-image: url("../../img/icon-mobile-menu.svg");
+  background-image: url("../img/icon-mobile-menu.svg");
 }
