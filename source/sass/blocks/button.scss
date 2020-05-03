@@ -2,14 +2,12 @@
   width: 280px;
   height: 40px;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 40px;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #68b738;
   text-align: center;
   display: inline-block;
-  // vertical-align: middle; че-то не работает
-
 
   &--show-more {
     color: #444444;

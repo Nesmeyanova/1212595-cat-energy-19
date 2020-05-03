@@ -2,6 +2,10 @@
   margin: 0 auto;
 }
 
+.advantages__title {
+  padding-bottom: 35px;
+}
+
 .advantages__list {
   margin: 0 auto;
   padding: 0;
@@ -15,6 +19,8 @@
 }
 
 .advantages__item {
+  margin-bottom: 40px;
+
   &::before {
     content: "";
     background-color: #68b738;
@@ -24,6 +30,7 @@
     display: inline-block;
     vertical-align: middle;
     margin-bottom: 20px;
+    position: absolute;
   }
 
   &--healthy::before {
@@ -40,5 +47,10 @@
 
   &--quickly::before {
     background-image: url("../img/advantage-clock@1x.png");
+  }
+
+  .advantages__text {
+    width: 192px;
+    padding-left: 80px;
   }
 }

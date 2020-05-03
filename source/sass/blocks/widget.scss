@@ -1,12 +1,25 @@
-.widget__border {
+.widget {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.widget__weight {
   width: 124px;
+}
+
+.widget__time {
+  width: 124px;
+}
+
+.widget__border {
   height: 56px;
   color: #111111;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 56px;
   text-align: center;
   text-transform: uppercase;
-  border: 1px solid black;
+  border: 1px solid #cdcdcd;
   border-radius: 3px;
 }
 
@@ -16,4 +29,9 @@
   line-height: 12px;
   color: #444444;
   text-align: center;
+  width: 82px;
+  height: 21px;
+  background-color: #f2f2f2;
+  margin: 0 auto;
+  margin-top: -33px;
 }

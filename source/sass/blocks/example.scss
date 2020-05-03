@@ -2,7 +2,10 @@
   background-color: #f2f2f2;
   width: 320px;
   margin: 0 auto;
-  padding-left: 20px;
+}
+
+.example__title {
+  padding-top: 33px;
 }
 
 .example__text {
@@ -26,6 +29,7 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-
   color: #111111;
+  margin: 0;
+  margin-bottom: 44px;
 }

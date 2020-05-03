@@ -1,6 +1,29 @@
-.slider-controls {
+.slider__inner {
+  overflow: hidden;
+}
+
+.slider__slides {
+  width: 223%;
+}
+
+.slider__image {
+  float: left;
+  width: 311px;
+  height: 232px;
+}
+
+.slider__controls {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+  text-align: center;
+}
+
+.slider__was:checked ~ .slider__inner .slider__slides {
+  transform: translate(0);
+}
+
+.slider__became:checked ~ .slider__inner .slider__slides {
+  transform: translate(-100px);
 }
