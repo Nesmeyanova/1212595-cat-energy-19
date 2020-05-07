@@ -10,11 +10,17 @@
   color: #111111;
   text-transform: uppercase;
   text-align: left;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
   margin: 0;
   margin-right: 19px;
+
+  @media (min-width: $tablet-width) {
+    width: 154px;
+    padding-left: 40px;
+  }
 }
 
 .main-contacts__address {
@@ -24,4 +30,8 @@
   font-size: 14px;
   line-height: 20px;
   font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    width: 160px;
+  }
 }

@@ -1,7 +1,18 @@
 .options-list {
   @include reset-list;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .options-list__item {
   margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    margin-right: 80px;
+    padding-left: 52px;
+
+  }
 }

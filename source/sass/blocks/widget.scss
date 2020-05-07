@@ -1,20 +1,35 @@
 .widget {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+  }
 }
 
 .widget__weight {
   width: 124px;
+
+  @media (min-width: $desktop-width) {
+    width: 162px;
+    margin-right: 72px;
+  }
 }
 
 .widget__time {
   width: 124px;
+
+  @media (min-width: $desktop-width) {
+    width: 162px;
+  }
 }
 
 .widget__border {
   height: 56px;
   color: #111111;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 56px;
   text-align: center;
@@ -34,4 +49,12 @@
   background-color: #f2f2f2;
   margin: 0 auto;
   margin-top: -33px;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #eaeaea;
+  }
 }

@@ -1,3 +1,14 @@
+.site-list {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+  }
+}
+
 .site-list__item {
   min-height: 65px;
   border-top: 1px solid #ededed;
@@ -9,5 +20,4 @@
   line-height: 65px;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 500;
 }

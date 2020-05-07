@@ -1,7 +1,16 @@
 .example {
   background-color: #f2f2f2;
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    border-top: 1px solid #f2f2f2;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #eaeaea;
+  }
 }
 
 .example__title {
@@ -15,16 +24,20 @@
   line-height: 18px;
   text-align: left;
   width: 266px;
-}
 
-@media (min-width: $tablet-width) {
-  .example__text {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    width: 676px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 431px;
   }
 }
 
 .example__expenses {
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
@@ -32,4 +45,27 @@
   color: #111111;
   margin: 0;
   margin-bottom: 44px;
+
+  @media (min-width: $tablet-width) {
+    width: 135px;
+    text-align: right;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 430px;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.example__wrapper-left {
+  @media (min-width: $desktop-width) {
+    width: 431px;
+  }
 }

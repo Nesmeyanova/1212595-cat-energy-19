@@ -1,4 +1,5 @@
 .promo {
+  font-family: "Oswald", "Arial", sans-serif;
   height: 305px;
   color: #ffffff;
   text-align: center;
@@ -6,6 +7,13 @@
   background-repeat: no-repeat;
   background-color: #69b738;
   margin-bottom: 190px;
+
+  @media (min-width: $tablet-width) {
+    color: #111111;
+    background-image: none;
+    background-color: #ffffff;
+    padding-left: 90px;
+  }
 }
 
 .promo__title {
@@ -20,6 +28,8 @@
     font-size: 60px;
     line-height: 60px;
     text-align: left;
+    width: 415px;
+    margin: 0;
   }
 }
 
@@ -30,4 +40,24 @@
   margin: 0 auto;
   padding-bottom: 29px;
   font-weight: normal;
+
+  @media (min-width: $tablet-width) {
+    font: 20px;
+    line-height: 20px;
+    text-align: left;
+  }
+}
+
+.promo__select-program {
+  width: 280px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 245px;
+    height: 52px;
+    font-size: 20px;
+    line-height: 52px;
+  }
 }
