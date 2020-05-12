@@ -1,9 +1,14 @@
+.form-page {
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
 .form-page__text {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   text-align: left;
   color: #111111;
+  width: 226px;
 }
 
 .form-page__filter {
@@ -12,9 +17,32 @@
   line-height: 18px;
 }
 
+.form-page__filter-wrapper {
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
 .form-page__definitely {
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
   text-align: center;
+  text-transform: none;
+}
+
+.form-page__input {
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.form-page__textarea {
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+  width: 100%;
+  height: 150px;
+  color: #444444;
 }

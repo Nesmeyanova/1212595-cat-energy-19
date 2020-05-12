@@ -1,4 +1,26 @@
 .parameters {
   border: none;
-  border-bottom: 1px solid #ededed;
+  padding: 0;
+  padding-bottom: 23px;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
+}
+
+.parameters__input {
+  border: 1px solid #cdcdcd;
+  height: 45px;
+
+  &--name {
+    width: 229px;
+  }
+
+  &--weight {
+    width: 204px;
+  }
+
+  &--age {
+    width: 172px;
+  }
 }

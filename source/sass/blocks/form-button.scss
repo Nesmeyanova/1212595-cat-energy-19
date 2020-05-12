@@ -1,3 +1,17 @@
 .form-button {
   margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    width: 283px;
+    height: 52px;
+    margin-right: 60px;
+  }
+}
+
+.form-button__wrapper {
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-right: 20px;
+  }
 }

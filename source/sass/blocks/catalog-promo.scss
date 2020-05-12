@@ -1,10 +1,39 @@
 .catalog-promo {
-  min-width: 280px;
   min-height: 289px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
-  background-size: 280px 289px;
-  background-color: #68b738;
   background-repeat: no-repeat;
+  background-size: 100%;
+  margin-bottom: 35px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    background-size: cover;
+    background-position: 0px -326px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 293px;
+    background-position: right;
+    margin-top: 84px;
+    margin-left: 80px;
+    margin-bottom: 0;
+  }
+}
+
+.catalog-promo__img {
+  position: absolute;
+  top: 65px;
+  left: 103px;
+
+  @media (min-width: $tablet-width) {
+    top: 103px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 62px;
+    left: 93px;
+  }
 }
 
 .catalog-promo__text {
@@ -13,4 +42,15 @@
   line-height: 20px;
   color: #ffffff;
   text-align: center;
+  width: 161px;
+  margin: auto;
+  padding-top: 181px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 119px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: auto;
+  }
 }

@@ -1,3 +1,42 @@
 .add {
   border: none;
 }
+
+.add__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.add__item {
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    width: 303px;
+  }
+}
+
+.add input+label::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border: solid 1px #ededed;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  margin-right: 10px;
+}
+
+.add input:checked+label::after {
+  content: "";
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 17px;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  left: 39px;
+}

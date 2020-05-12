@@ -1,3 +1,29 @@
 .catalog-page__list {
   @include reset-list;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.catalog-page__title {
+  border-bottom: 1px solid #ededed;
+  border-top: 1px solid #ededed;
+  padding-bottom: 32px;
+  padding-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding-bottom: 80px;
+  }
+}
+
+.catalog-page__extra-wrapper {
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin-bottom: 86px;
+  }
 }

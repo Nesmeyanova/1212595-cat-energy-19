@@ -1,8 +1,44 @@
+.show-more {
+  position: relative;
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 25px;
+  padding-top: 75px;
+
+  @media (min-width: $desktop-width) {
+    border: 1px solid #ededed;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 31px;
+    height: 2px;
+    background-color: #ededed;
+    top: 41px;
+    left: 120px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 31px;
+    height: 2px;
+    background-color: #ededed;
+    transform: rotate(90deg);
+    top: 40px;
+    left: 120px;
+  }
+}
+
 .show-more__title {
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #111111;
   text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 .show-more__text {
@@ -10,4 +46,5 @@
   line-height: 16px;
   text-align: center;
   color: #444444;
+  margin-bottom: 22px;
 }

@@ -1,8 +1,36 @@
+.extra-product {
+  border-bottom: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    border-right: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
+    padding: 28px 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: baseline;
+    border-right: none;
+    border-left: none;
+    padding: 13px 0;
+  }
+}
+
 .extra-product__title {
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: #222222;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 170px;
+  }
 }
 
 .extra-product__table {
@@ -10,4 +38,29 @@
   font-size: 14px;
   line-height: 14px;
   color: #444444;
+  margin-bottom: 14px;
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+  }
+}
+
+.extra-product__button {
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    width: 633px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}
+
+.extra-product__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

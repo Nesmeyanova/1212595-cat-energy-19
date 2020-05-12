@@ -13,7 +13,7 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 0px;
+    top: 0;
   }
 }
 
@@ -60,10 +60,10 @@
   top: 3px;
 }
 
-.slider__was:checked~.slider__inner .slider__slides {
+.slider__was:checked ~ .slider__inner .slider__slides {
   transform: translate(0);
 }
 
-.slider__became:checked~.slider__inner .slider__slides {
+.slider__became:checked ~ .slider__inner .slider__slides {
   transform: translate(-330px);
 }
