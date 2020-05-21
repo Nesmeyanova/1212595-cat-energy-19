@@ -12,6 +12,10 @@
 .site-list__item {
   min-height: 65px;
   border-top: 1px solid #ededed;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 35px;
+  }
 }
 
 .site-list__link {

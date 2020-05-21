@@ -13,8 +13,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
-    width: 708px;
+    flex-wrap: wrap;
     margin: 0 auto;
   }
 }

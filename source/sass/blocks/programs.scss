@@ -2,9 +2,11 @@
   border: none;
   border-top: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
+  padding-top: 21px;
 
   @media (min-width: $tablet-width) {
     border: 1px solid #ededed;
+    padding: 25px 28px;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,6 +27,7 @@
   border-radius: 50%;
   display: inline-block;
   vertical-align: middle;
+  margin-right: 16px;
 }
 
 .programs input:checked+label::after {

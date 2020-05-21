@@ -12,7 +12,9 @@
     color: #111111;
     background-image: none;
     background-color: #ffffff;
-    padding-left: 90px;
+    position: relative;
+    z-index: 1;
+    text-align: left;
   }
 }
 
@@ -59,5 +61,14 @@
     height: 52px;
     font-size: 20px;
     line-height: 52px;
+  }
+}
+
+.promo__image {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    z-index: -1;
+    text-align: center;
+
   }
 }

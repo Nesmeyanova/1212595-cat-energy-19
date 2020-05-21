@@ -1,3 +1,9 @@
+.extra-goods {
+  @media (min-width: $desktop-width) {
+    width: 75%;
+  }
+}
+
 .extra-goods__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -9,6 +15,11 @@
   margin: 0;
   padding-bottom: 30px;
   padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .extra-goods__list {

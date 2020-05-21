@@ -12,8 +12,12 @@
 .widget__weight {
   width: 124px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     width: 162px;
+    margin-right: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-right: 72px;
   }
 }
@@ -21,7 +25,7 @@
 .widget__time {
   width: 124px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     width: 162px;
   }
 }
@@ -52,6 +56,12 @@
 
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
+    &--weight {
+      width: 114px;
+    }
+    &--time {
+      width: 142px;
+    }
   }
 
   @media (min-width: $desktop-width) {

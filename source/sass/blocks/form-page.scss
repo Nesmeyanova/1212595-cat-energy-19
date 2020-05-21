@@ -9,18 +9,111 @@
   text-align: left;
   color: #111111;
   width: 226px;
+  margin: 0;
+  margin-bottom: 39px;
+  padding-top: 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 330px;
+  }
 }
 
 .form-page__filter {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .form-page__filter-wrapper {
 
   @media (min-width: $desktop-width) {
     display: flex;
+  }
+}
+
+.form-page__input {
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+  height: 45px;
+  font-size: 16px;
+  line-height: 18px;
+  padding-left: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.form-page__programs {
+  padding: 0;
+  margin-bottom: 45px;
+}
+
+.form-page__contacts {
+  padding: 0;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 69px;
+  }
+}
+
+.form-page__legend-contacts {
+  padding-top: 31px;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
+}
+
+.form-page__comment {
+  padding: 0;
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 71px;
+  }
+}
+
+.form-page__legend-comment {
+  margin-bottom: 31px;
+}
+
+.form-page__add {
+  padding: 0;
+  margin-bottom: 27px;
+}
+
+.form-page__legend-add {
+  margin-bottom: 32px;
+}
+
+.form-page__textarea {
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+  width: 100%;
+  height: 150px;
+  color: #444444;
+  font-size: 16px;
+  line-height: 18px;
+  padding-top: 15px;
+  padding-left: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    height: 174px;
   }
 }
 
@@ -31,18 +124,5 @@
   color: #444444;
   text-align: center;
   text-transform: none;
-}
-
-.form-page__input {
-  font-family: "Oswald", "Arial", sans-serif;
-  text-transform: uppercase;
-}
-
-.form-page__textarea {
-  font-family: "Oswald", "Arial", sans-serif;
-  text-transform: uppercase;
-  border: 1px solid #cdcdcd;
-  width: 100%;
-  height: 150px;
-  color: #444444;
+  margin: 0;
 }

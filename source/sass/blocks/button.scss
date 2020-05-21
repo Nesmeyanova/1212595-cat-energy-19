@@ -10,12 +10,16 @@
   text-align: center;
   display: inline-block;
 
+  @media (min-width: $tablet-width) {
+    width: 249px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 173px;
+  }
+
   &--show-more {
     color: #444444;
     background-color: #f2f2f2;
-
-    @media (min-width: $desktop-width) {
-      width: 173px;
-    }
   }
 }

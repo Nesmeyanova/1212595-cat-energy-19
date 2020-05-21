@@ -26,10 +26,13 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
     width: 170px;
+    margin-right: 200px;
   }
 }
 
@@ -39,10 +42,21 @@
   line-height: 14px;
   color: #444444;
   margin-bottom: 14px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 194px;
+    text-align: right;
+  }
 
   @media (min-width: $desktop-width) {
-    width: 200px;
+    width: 250px;
+    text-align: left;
   }
+}
+
+.extra-product__table td:nth-child(2n) {
+  text-align: right;
 }
 
 .extra-product__button {
@@ -55,6 +69,8 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    margin: 0;
+    margin-left: auto;
   }
 }
 

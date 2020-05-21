@@ -6,14 +6,13 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 65px;
   }
 }
 
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
-  width: 280px;
-  margin: 0 auto;
   min-height: 65px;
   align-items: center;
 }
@@ -26,4 +25,8 @@
   width: 25px;
   height: 19px;
   background-image: url("../img/icon-mobile-menu.svg");
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
