@@ -1,37 +1,110 @@
+.advantages {
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 233px;
+  }
+}
+
+.advantages__title {
+  padding-bottom: 35px;
+}
+
 .advantages__list {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
-
   font-size: 14px;
   line-height: 18px;
-
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    counter-reset: number 0;
+  }
 }
 
 .advantages__item {
+  margin-bottom: 27px;
+  position: relative;
+  padding-left: 67px;
+
+  @media (min-width: $tablet-width) {
+    width: 245px;
+    height: 245px;
+    margin-bottom: 0;
+    margin-right: 105px;
+    padding-top: 35px;
+    padding-left: 0;
+    counter-increment: number;
+    z-index: 1;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &::after {
+      content: counter(number);
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 230px;
+      line-height: 230px;
+      color: #f2f2f2;
+      font-weight: 400;
+      position: absolute;
+      top: 0;
+      right: 55px;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 30px;
+    width: 245px;
+
+    &:nth-child(2) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+
   &::before {
     content: "";
     background-color: #68b738;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     width: 60px;
     height: 60px;
-    display: inline-block;
     vertical-align: middle;
+    margin-bottom: 20px;
+    position: absolute;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      position: static;
+      display: block;
+    }
   }
 
   &--healthy::before {
-    background-image: url("../../img/advantage-leaf@1x.png");
+    background-image: url("../img/advantage-leaf@1x.png");
   }
 
   &--simplicity::before {
-    background-image: url("../../img/advantage-powder@1x.png");
+    background-image: url("../img/advantage-powder@1x.png");
   }
 
   &--comfortably::before {
-    background-image: url("../../img/advantage-dining@1x.png");
+    background-image: url("../img/advantage-dining@1x.png");
   }
 
   &--quickly::before {
-    background-image: url("../../img/advantage-clock@1x.png");
+    background-image: url("../img/advantage-clock@1x.png");
   }
 }

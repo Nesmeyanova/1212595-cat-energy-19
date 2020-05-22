@@ -1,11 +1,22 @@
 .button {
+  font-family: "Oswald", "Arial", sans-serif;
   width: 280px;
   height: 40px;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 40px;
+  text-transform: uppercase;
   color: #ffffff;
   background-color: #68b738;
   text-align: center;
+  display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    width: 249px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 173px;
+  }
 
   &--show-more {
     color: #444444;

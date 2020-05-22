@@ -1,6 +1,8 @@
 @import "./fonts.scss";
 @import "./variables.scss";
+@import "./mixin.scss";
 @import "./base.scss";
+@import "./container.scss";
 @import "./blocks/add.scss";
 @import "./blocks/advantages.scss";
 @import "./blocks/button.scss";
@@ -23,7 +25,6 @@
 @import "./blocks/options.scss";
 @import "./blocks/page-footer.scss";
 @import "./blocks/page-header.scss";
-@import "./blocks/page-main.scss";
 @import "./blocks/parameters.scss";
 @import "./blocks/product-card.scss";
 @import "./blocks/programs.scss";

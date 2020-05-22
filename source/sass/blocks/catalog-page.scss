@@ -1,5 +1,31 @@
 .catalog-page__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include reset-list;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.catalog-page__title {
+  padding-bottom: 32px;
+  padding-top: 17px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding-bottom: 80px;
+  }
+}
+
+.catalog-page__extra-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin-bottom: 86px;
+  }
+
+  .catalog-page__extra-goods {
+    margin-bottom: 39px;
+  }
 }

@@ -4,4 +4,9 @@
   color: #111111;
   text-transform: none;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }

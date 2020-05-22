@@ -1,4 +1,37 @@
 .parameters {
   border: none;
-  border-bottom: 1px solid #ededed;
+  padding: 0;
+  padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
+}
+
+.parameters__item {
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.parameters__input {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+
+  &-name {
+    margin-left: 15px;
+  }
+
+  &-weight {
+    margin-left: 18px;
+  }
+
+  &-age {
+    margin-left: 16px;
+  }
 }
