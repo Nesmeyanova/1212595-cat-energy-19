@@ -1,5 +1,10 @@
 .product-card {
-  border-bottom: 1px solid #ededed;
+  border-top: 1px solid #ededed;
+  padding-bottom: 25px;
+
+  &:last-child {
+    border-bottom: 1px solid #ededed;
+  }
 
   @media (min-width: $tablet-width) {
     border: none;
@@ -51,6 +56,7 @@
 .product-card__table td:nth-child(2n) {
   text-align: right;
 }
+
 .product-card__image {
   @media (min-width: $tablet-width) {
     position: absolute;

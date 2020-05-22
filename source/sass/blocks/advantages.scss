@@ -1,5 +1,9 @@
 .advantages {
   margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 233px;
+  }
 }
 
 .advantages__title {
@@ -64,6 +68,7 @@
     &:nth-child(2) {
       margin-right: 30px;
     }
+
     &:nth-child(4n) {
       margin-right: 0;
     }

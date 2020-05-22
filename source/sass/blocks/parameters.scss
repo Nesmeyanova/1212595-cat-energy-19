@@ -9,41 +9,29 @@
 
   @media (min-width: $desktop-width) {
     width: 570px;
-
   }
 }
 
 .parameters__item {
   margin-bottom: 14px;
+  display: flex;
+  align-items: center;
 }
 
 .parameters__input {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 
   &-name {
     margin-left: 15px;
-    width: 219px;
-
-    @media (min-width: $tablet-width) {
-      width: 637px;
-      font-size: 20px;
-    }
   }
 
   &-weight {
     margin-left: 18px;
-    width: 194px;
-
-    @media (min-width: $tablet-width) {
-      width: 606px;
-    }
   }
 
   &-age {
     margin-left: 16px;
-    width: 156px;
-
-    @media (min-width: $tablet-width) {
-      width: 559px;
-    }
   }
 }

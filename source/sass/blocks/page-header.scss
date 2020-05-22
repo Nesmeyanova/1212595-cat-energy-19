@@ -1,12 +1,15 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  background-color: $bg-white;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 38px;
   }
 }
 

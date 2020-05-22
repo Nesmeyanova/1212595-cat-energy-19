@@ -9,10 +9,9 @@
 }
 
 .catalog-page__title {
-  border-bottom: 1px solid #ededed;
-  border-top: 1px solid #ededed;
   padding-bottom: 32px;
   padding-top: 17px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     border: none;
@@ -21,9 +20,12 @@
 }
 
 .catalog-page__extra-wrapper {
-
   @media (min-width: $desktop-width) {
     display: flex;
     margin-bottom: 86px;
+  }
+
+  .catalog-page__extra-goods {
+    margin-bottom: 39px;
   }
 }

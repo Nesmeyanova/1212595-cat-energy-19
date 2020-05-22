@@ -32,7 +32,6 @@
 }
 
 .form-page__filter-wrapper {
-
   @media (min-width: $desktop-width) {
     display: flex;
   }
@@ -46,6 +45,7 @@
   font-size: 16px;
   line-height: 18px;
   padding-left: 16px;
+  flex-grow: 1;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

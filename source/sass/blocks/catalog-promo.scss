@@ -8,7 +8,9 @@
 
   @media (min-width: $tablet-width) {
     background-size: cover;
-    background-position: 0px -326px;
+    background-position: 0 -326px;
+    display: flex;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,7 +34,7 @@
 
   @media (min-width: $desktop-width) {
     top: 62px;
-    left: 93px;
+    transform: translateX(-62%);
   }
 }
 
@@ -48,9 +50,11 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 119px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: auto;
+    margin: 0 auto;
+    padding-top: 125px;
   }
 }

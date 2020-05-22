@@ -11,20 +11,17 @@
 .form-contacts__item {
   margin-bottom: 14px;
   position: relative;
+  display: flex;
+  align-items: center;
 
   @media (min-width: $desktop-width) {
-    width: 570px;
     margin-bottom: 20px;
+    flex-grow: 1;
   }
 }
 
 .form-contacts__e-mail {
   margin-left: 12px;
-  width: 210px;
-
-  @media (min-width: $tablet-width) {
-    width: 625px;
-  }
 }
 
 .form-contacts__mail-button {
@@ -35,11 +32,6 @@
 
 .form-contacts__telephone {
   margin-left: 10px;
-  width: 195px;
-
-  @media (min-width: $tablet-width) {
-    width: 606px;
-  }
 }
 
 .form-contacts__telephone-button {

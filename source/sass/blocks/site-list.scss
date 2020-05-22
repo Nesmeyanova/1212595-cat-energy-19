@@ -3,6 +3,7 @@
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
+  margin: 0 -20px;
 
   @media (min-width: $tablet-width) {
     font-weight: 400;
@@ -13,15 +14,30 @@
   min-height: 65px;
   border-top: 1px solid #ededed;
 
+  &:last-child {
+    border-bottom: 1px solid #ededed;
+  }
+
   @media (min-width: $tablet-width) {
     padding-left: 35px;
-  }
-}
+    border-top: none;
 
-.site-list__link {
-  color: #111111;
-  font-size: 20px;
-  line-height: 65px;
-  text-align: center;
-  text-transform: uppercase;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .site-list__link {
+    color: #111111;
+    font-size: 20px;
+    line-height: 65px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .site-list__link-index {
+    @media (min-width: $desktop-width) {
+      color: #ffffff;
+    }
+  }
 }

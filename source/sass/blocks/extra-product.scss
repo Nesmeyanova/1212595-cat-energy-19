@@ -1,5 +1,9 @@
 .extra-product {
-  border-bottom: 1px solid #cdcdcd;
+  border-top: 1px solid #cdcdcd;
+
+  &:last-child {
+    border-bottom: 1px solid #cdcdcd;
+  }
 
   @media (min-width: $tablet-width) {
     border-right: 1px solid #cdcdcd;
@@ -32,7 +36,7 @@
 
   @media (min-width: $desktop-width) {
     width: 170px;
-    margin-right: 200px;
+    margin-right: 100px;
   }
 }
 
@@ -43,20 +47,29 @@
   color: #444444;
   margin-bottom: 14px;
   width: 100%;
+  text-align: left;
+
+  td:nth-child(2n) {
+    text-align: right;
+  }
 
   @media (min-width: $tablet-width) {
-    width: 194px;
+    td:nth-child(2n) {
+      width: 100px;
+      margin-right: 25px;
+    }
+
     text-align: right;
   }
 
   @media (min-width: $desktop-width) {
     width: 250px;
     text-align: left;
-  }
-}
 
-.extra-product__table td:nth-child(2n) {
-  text-align: right;
+    td:nth-child(2n) {
+      text-align: right;
+    }
+  }
 }
 
 .extra-product__button {
